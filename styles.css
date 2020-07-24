@@ -23,39 +23,48 @@ a {
     text-decoration: none;
 } 
 
-img{
-    width: 50%;
-    height: 50%;
-}
-
-.bg-img{
-    height: 85vh;
-    background-image: url("./imgs/20.jpg");
-    background-size:cover;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    
-    
-}
-.title-sections{
-    text-align: center;
-}
-.iconos{
-    width: 2%;
-    height: 2%;
-    margin:0;
-    padding: 0;
-}
 
 .container{
 
     background-color: #000;
     min-height: 80px;
+
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.navega{
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+}
+.navega li a{
+    align-items: center;
 }
 h1{
     color:var(--primary-color);
+   
+}
 
-    
+
+.bg-img{
+    height: 89vh;
+    background-image: url("./imgs/14.jpg");
+    background-size:cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.somos{
+    height: 100vh;
 }
 
 .reservar{
@@ -71,14 +80,30 @@ h1{
     cursor: pointer;
 }
 
-.navega{
-    list-style-type: none;
-   
-    float: right;
-    display:flex;
-    margin-top: 22px;
-    margin-right: 22px;
+
+.title-sections{
+    text-align: center;
 }
+.iconos{
+    width: 2%;
+    height: 2%;
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+
+
+.bg{
+    background-image: url('./imgs/unnamed.png');
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    background-color:transparent;
+}
+
 
 .navega li{
     color:var(--primary-color);
@@ -96,8 +121,14 @@ h1{
 
 .galeria{
    display:flex;
+   flex-wrap: wrap;
+   width: 100vw;
+ 
+  
 }
-
+.imagen{
+    width: 50%;
+}
 .menu div {
    
     border: 5em solid transparent;
@@ -108,6 +139,15 @@ h1{
 
     
 }
+
+
+.footer-text{
+    font-size: 1.3em;
+}
+
+.text-mention{
+    font-size: 0.5em;
+}
 footer{
     height: 5vh;
     padding-top: 3rem;
@@ -117,12 +157,3 @@ footer{
     color:var(--primary-color);
     
 }
-
-.footer-text{
-    font-size: 1.3em;
-}
-
-.text-mention{
-    font-size: 0.5em;
-}
-
