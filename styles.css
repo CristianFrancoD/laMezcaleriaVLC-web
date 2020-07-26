@@ -91,7 +91,20 @@ h1{
     }
 }
 .somos{
-    height: 100vh;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo1{
+    width: 20%;
+    height: 50%;
+}
+
+.desc{
+    text-align: justify;
 }
 
 .reservar{
