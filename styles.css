@@ -24,12 +24,7 @@ a {
 } 
 
 
-.container{
 
-    background-color: #000;
-    min-height: 80px;
-
-}
 nav{
     display:flex;
     flex-direction: row;
@@ -48,21 +43,26 @@ nav{
 }
 h1{
     color:var(--primary-color);
-   
+    padding: 12px 20px;
 }
 
 
 .bg-img{
-    height: 89vh;
-    background-image: url("./imgs/14.jpg");
+    height: 100vh;
+    background-image: url("./imgs/bg.jpg");
     background-size:cover;
     background-color: transparent;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
 
 }
+
+.redes{
+    color: white;
+}
+
 .somos{
     height: 100vh;
 }
@@ -99,7 +99,6 @@ h1{
 .bg{
     background-image: url('./imgs/unnamed.png');
     background-position: center;
-    
     background-repeat: no-repeat;
     background-color:transparent;
 }
@@ -107,8 +106,12 @@ h1{
 
 .navega li{
     color:var(--primary-color);
-    border:1px solid var(--primary-color);
+    
     padding: 12px 20px;
+}
+
+.selected-navega{
+    border:1px solid var(--primary-color);
 }
 
 
