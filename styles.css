@@ -37,14 +37,44 @@ nav{
     list-style-type: none;
     margin-top: 10px;
     display: flex;
+    animation-name: navega-ani;
+    animation-duration: 2s;
 }
 .navega li a{
     align-items: center;
 }
+
+@keyframes navega-ani{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+
+
 h1{
     color:var(--primary-color);
     padding: 12px 20px;
+    animation-name: navega-ani;
+    animation-duration: 2s;
 }
+
+
 
 
 .bg-img{
@@ -108,16 +138,33 @@ h1{
 }
 
 .reservar{
-    padding: 14px 30px;
+    padding: 14px 35px;
     background:var(--secondary-color) ;
     border:1px solid var(--primary-color);
     color:var(--primary-color);
+    position: absolute;
+    left: 46%;
+    top: 45%;
 }
+
+
 .reservar:hover{
-    background: var(--primary-color);
-    border:1px solid var(--secondary-color);
-    color: var(--secondary-color);
     cursor: pointer;
+    animation-name: btn-reservar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes btn-reservar{
+    to{
+        background: var(--primary-color);
+        border:1px solid var(--secondary-color);
+        color: var(--secondary-color);
+       
+    }
+
+
 }
 
 
@@ -149,6 +196,7 @@ h1{
     
     padding: 12px 20px;
 }
+
 
 .selected-navega{
     border:1px solid var(--primary-color);
