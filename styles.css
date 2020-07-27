@@ -172,6 +172,30 @@ h1{
 .imagen{
     width: 50%;
 }
+
+.destilados{
+    text-align: justify;
+    background-color: white;
+    padding:2em;
+}
+.destilados img{
+    width: 25%;
+    height: 25%;
+    position: relative;
+    left: 40%;
+}
+
+.destilados h3{
+    
+    font-size:2em;
+    color:red;
+    border-bottom: 3px solid red;
+}
+
+.destilados p {
+    padding-top: 1.1em;
+    padding-bottom: 1.5em;
+}
 .menu div {
    
     border: 5em solid transparent;
