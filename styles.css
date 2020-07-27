@@ -79,13 +79,28 @@ h1{
 
 .bg-img{
     height: 100vh;
-    background-image: url("./imgs/bg.jpg");
-    background-size:cover;
-    background-color: transparent;
-    background-repeat: no-repeat;
+    background-color: black;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    animation-name: bg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    background-image: url("./imgs/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+@keyframes bg{
+
+
+    from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
 
 }
 
