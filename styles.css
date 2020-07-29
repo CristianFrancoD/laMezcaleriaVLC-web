@@ -14,7 +14,7 @@ body{
 }
 
 :root{
-    --primary-color: #EFF1F3;
+    --primary-color: #fff;
     --secondary-color:#000;
     --third-color:#943133;
 }
@@ -31,6 +31,43 @@ nav{
     justify-content: space-between;
     align-items: center;
   
+}
+
+
+.bg-img{
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    animation-name: bg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    background-image: url("./imgs/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+@keyframes bg{
+
+
+    from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 100% 0;
+      }
+
+}
+
+.second-menu{
+    height: 10vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
 }
 
 .navega{
@@ -77,35 +114,10 @@ h1{
 
 
 
-.bg-img{
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    animation-name: bg;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    background-image: url("./imgs/bg.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
 
-}
-
-@keyframes bg{
-
-
-    from {
-        background-position: 0 0;
-      }
-      to {
-        background-position: 100% 0;
-      }
-
-}
 
 .redes{
-    color: white;
+    color: var(--primary-color);
    font-size: 1.5em;
 
 
@@ -113,7 +125,7 @@ h1{
 }
 
 .flecha{
-    color:white;
+    color: var(--primary-color);
     font-size: 4em;
     margin: auto;
     position: absolute;
@@ -137,7 +149,7 @@ h1{
 }
 .somos{
     height: 70vh;
-    background-color: white;
+    background-color:var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +250,7 @@ h1{
 
 .destilados{
     text-align: justify;
-    background-color: white;
+    background-color: var(--primary-color);
     padding:2em;
 }
 .destilados img{
@@ -251,8 +263,8 @@ h1{
 .destilados h3{
     
     font-size:2em;
-    color:red;
-    border-bottom: 3px solid red;
+    color:var(--third-color);
+    border-bottom: 3px solid var(--third-color);
 }
 
 .destilados p {
