@@ -25,6 +25,40 @@ a {
 
 .contacto{
    height: 75vh;
+   display: flex;
+   justify-content: space-around;
+}
+[type="text"]{
+    padding: 14px 35px 0px 0px;
+    margin-bottom: 1.2em;
+    
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+textarea{
+    padding: 14px 35px 0px 0px;
+    margin-bottom: 1.2em;
+    border: 2px solid var(--secondary-color);
+}
+
+textarea:focus{
+    outline: none; 
+    border: 2px solid var(--third-color);
+
+}
+
+[type="text"]:focus{
+     outline: none; 
+     border-bottom: 2px solid var(--third-color );
+
+}
+
+.formulario{
+    width: 35vw;
+    
 }
 
 nav{
@@ -175,6 +209,12 @@ h1{
     left: 46%;
     top: 45%;
 }
+.enviar{
+    padding: 14px 35px;
+    background:var(--secondary-color) ;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+}
 
 
 .reservar:hover{
@@ -288,7 +328,9 @@ h1{
 .footer-text{
     font-size: 1.3em;
 }
-
+.redes{
+    padding-right: 5px;
+}
 .text-mention{
     font-size: 0.5em;
 }
