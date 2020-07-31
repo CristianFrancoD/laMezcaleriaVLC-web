@@ -184,19 +184,30 @@ h1{
     }
 }
 .somos{
-    height: 70vh;
+    height: 50vh;
     background-color:var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.mezcales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.mezcales h1{
+    color:var(--secondary-color);
+}
 .logo1{
-    width: 20%;
+    padding-left: 2em;
+    width: 15%;
     height: 50%;
 }
 
 .desc{
+    padding-right:2em;
+
     text-align: justify;
 }
 
