@@ -72,7 +72,7 @@ nav{
 
 .bg-img{
     height: 100vh;
-    max-width: 100vw;
+    
     background-color: var(--secondary-color);
     display: flex;
     align-items: flex-start;
@@ -81,10 +81,30 @@ nav{
     animation-duration: 2s;
     animation-fill-mode: forwards;
     background-image: url("./imgs/bg.jpg");
-    background-size:100%;
+    background-size:cover;
     background-repeat: no-repeat;
 
 }
+@media (max-height:414px){
+    .bg-img{
+        height: 70vh;
+    }
+
+
+}
+
+@media (max-width:710px){
+    .navega{
+       visibility: hidden;
+       
+    }
+    .bg-img{
+        height: 70vh;
+        background-size: 70vh 100vw;
+    }
+}
+
+
 
 @keyframes bg{
 
