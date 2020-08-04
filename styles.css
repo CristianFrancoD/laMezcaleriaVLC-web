@@ -82,26 +82,51 @@ nav{
     background-image: url("./imgs/bg.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
 
 }
-@media only screen and (max-width:500px){
-    .bg-img{
-        height: 85vh;
-
-    }
+.reservar{
+    padding: 14px 35px;
+    background:var(--secondary-color) ;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    position: absolute;
+    left: 46%;
+    top: 45%;
 }
 
-@media (max-width:710px){
+.mini-menu{
+    visibility: hidden;
+    display:none;
+}
+@media only screen and (orientation: portrait){
     .navega{
-       visibility: hidden;
-       
-    }
+        visibility: hidden;
+        display:none;
+     }
+
+     .mini-menu{
+         visibility:visible;
+         font-size: 2.5em;
+         color:white;
+         display:block;
+
+         
+     }
+
     .bg-img{
-        height: 70vh;
-        background-size: 70vh 100vw;
+        background-size:100% 35%;
+    }
+    header{
+        height: 35vh;      
+    }
+
+    .reservar{
+        left: 46%;
+        top: 15%;
     }
 }
+
 
 
 
@@ -231,15 +256,7 @@ h1{
     text-align: justify;
 }
 
-.reservar{
-    padding: 14px 35px;
-    background:var(--secondary-color) ;
-    border:1px solid var(--primary-color);
-    color:var(--primary-color);
-    position: absolute;
-    left: 46%;
-    top: 45%;
-}
+
 .enviar{
     padding: 14px 35px;
     background:var(--secondary-color) ;
