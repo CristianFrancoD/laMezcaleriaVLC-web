@@ -72,7 +72,6 @@ nav{
 
 .bg-img{
     height: 100vh;
-    
     background-color: var(--secondary-color);
     display: flex;
     align-items: flex-start;
@@ -83,14 +82,14 @@ nav{
     background-image: url("./imgs/bg.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
-@media (max-height:414px){
+@media only screen and (max-width:500px){
     .bg-img{
-        height: 70vh;
+        height: 85vh;
+
     }
-
-
 }
 
 @media (max-width:710px){
@@ -284,12 +283,7 @@ h1{
 
 
 
-.bg{
-   /* background-image: url('./imgs/unnamed.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color:transparent;*/
-}
+
 
 
 .navega li{
