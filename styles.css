@@ -95,9 +95,39 @@ nav{
     top: 45%;
 }
 
+.somos{
+    height: 50vh;
+    background-color:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo1{
+    padding-left: 2em;
+    width: 15%;
+    height: 50%;
+}
+
+.desc{
+    padding-right:2em;
+
+    text-align: justify;
+}
 .mini-menu{
     visibility: hidden;
     display:none;
+}
+.flecha{
+    color: var(--primary-color);
+    font-size: 4em;
+    margin: auto;
+    position: absolute;
+    bottom:15px;
+    left: 50%;
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 @media only screen and (orientation: portrait){
     .navega{
@@ -105,9 +135,11 @@ nav{
         display:none;
      }
 
+     
+
      .mini-menu{
          visibility:visible;
-         font-size: 2.5em;
+         font-size: 5em;
          color:white;
          display:block;
 
@@ -121,10 +153,47 @@ nav{
         height: 35vh;      
     }
 
+
     .reservar{
-        left: 46%;
+        left: 35%;
         top: 15%;
+        font-size: 2em;
+        padding: 24px 45px;
     }
+
+    .somos{
+        height: 65vh;
+        flex-direction: column;
+        justify-content: flex-start;       
+    }
+
+    .logo1{
+        width: 40%;
+        height: 40%;
+        padding-left: 0;
+
+    }
+
+    .desc{
+        font-size: 3em;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .flecha{
+        color: var(--secondary-color);
+        font-size: 10em;
+        margin: auto;
+        position: absolute;
+        bottom:15px;
+        left: 42%;
+        animation-name: flecha;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+
 }
 
 
@@ -205,18 +274,7 @@ h1{
 
 }
 
-.flecha{
-    color: var(--primary-color);
-    font-size: 4em;
-    margin: auto;
-    position: absolute;
-    bottom:15px;
-    left: 50%;
-    animation-name: flecha;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
+
 
 @keyframes flecha{
 
@@ -228,13 +286,7 @@ h1{
         bottom: 15px;
     }
 }
-.somos{
-    height: 50vh;
-    background-color:var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .mezcales{
     display: flex;
     justify-content: center;
@@ -244,17 +296,9 @@ h1{
 .mezcales h1{
     color:var(--secondary-color);
 }
-.logo1{
-    padding-left: 2em;
-    width: 15%;
-    height: 50%;
-}
 
-.desc{
-    padding-right:2em;
 
-    text-align: justify;
-}
+
 
 
 .enviar{
