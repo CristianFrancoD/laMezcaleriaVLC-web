@@ -105,7 +105,7 @@ nav{
 .logo1{
     padding-left: 2em;
     width: 15%;
-    height: 50%;
+    height: auto;
 }
 
 .desc{
@@ -201,8 +201,10 @@ nav{
     }
 
     .logo1{
-        width: 45%;
-        height: 40%;
+        width: 50%;
+
+        height: auto;
+
         padding-left: 0;
 
     }
