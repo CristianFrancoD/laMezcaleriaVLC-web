@@ -410,6 +410,15 @@ textarea:focus{
         justify-content: space-around;
     
     }
+    .formulario{
+        width: 80vw;
+        
+    }
+
+    [type="text"]{
+        width: 100%;
+
+    }
 
 
 }
