@@ -15,8 +15,11 @@
                         <li><a href="mezcales.html">Mezcales</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
-                    <a class="mini-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a id="icon-menu1" class="mini-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                    <a id="icon-menu2" class="mini-menu" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </a>
                     <div class="hidden-menu" id="myLinks">
                         <a href="index.html">Inicio</a>
@@ -122,17 +125,7 @@
             <span class="footer-text">&copy; 2020 Powered by Chingon.xyz</span>
         </footer>
 
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myLinks");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-                
-              } else {
-                x.style.display = "block";
-              }
-            }
-            </script>
+        <script src="main.js"> </script>
 
     </body>
 </html>
