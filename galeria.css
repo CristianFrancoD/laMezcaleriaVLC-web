@@ -1,0 +1,35 @@
+
+*{
+    margin:0;
+}
+
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.galeria img{
+    max-width: 25vw;
+    height: auto;
+}
+
+
+@media only screen and (orientation: portrait){
+
+    body{
+        background-color:black;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria img{
+        max-width: 100%;
+        height: auto;
+        border:2px solid white;
+    }
+    
+}
