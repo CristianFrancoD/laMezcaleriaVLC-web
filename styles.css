@@ -86,7 +86,7 @@ h1{
 
 .bg-img{
     width: 100vw;
-    height: 100vh;
+    height: 55vh;
     background-color: var(--secondary-color);
     background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg-mob.jpg");
     background-size:cover;
@@ -139,6 +139,9 @@ h1{
         bottom: 15px;
     }
 }
+.menuses{
+    height: 45vh;
+}
 
 
 .header-menus{
@@ -172,10 +175,17 @@ h1{
     font-size: 3rem;
 }
 
+.comida-tragos p{
+    margin-bottom: 30px;
+}
 .mezcal-desti{
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 3rem;
+}
+
+.mezcal-desti p{
+    margin-bottom: 30px;
 }
