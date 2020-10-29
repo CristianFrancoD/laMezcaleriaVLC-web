@@ -35,7 +35,7 @@ h1{
     top:0;
 }
 .left-container{
-    top:2rem;
+    top:1rem;
     position:absolute;
     left: 3rem;
 }
@@ -49,7 +49,7 @@ h1{
 .links-nav{
     position: absolute;
     right:3rem;
-    top:2.5rem;
+    top:1.5rem;
 }
 .links-nav i{
     font-size: 6rem;
@@ -138,4 +138,44 @@ h1{
     100%{
         bottom: 15px;
     }
+}
+
+
+.header-menus{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.iconos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.iconos img{
+    border-radius: 50%;
+    border:var(--secondary-color) 10px solid;
+    max-width: 25rem;
+    height: auto;
+    
+}
+
+.comida-tragos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.mezcal-desti{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
 }
