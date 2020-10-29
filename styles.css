@@ -189,3 +189,57 @@ h1{
 .mezcal-desti p{
     margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+.destilados{
+    text-align: justify;
+    background-color: var(--primary-color);
+    padding:2em;
+}
+.destilados img{
+    width: 25%;
+    height: 25%;
+    position: relative;
+    left: 40%;
+}
+.destilados h3{
+    
+    font-size:2em;
+    color:var(--third-color);
+    border-bottom: 3px solid var(--third-color);
+}
+.destilados p {
+    padding-top: 1.1em;
+    padding-bottom: 1.5em;
+ 
+    
+}
+
+
+
+footer{
+    height: 20vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    
+}
+.redes{
+    color: var(--primary-color);
+    font-size: 2.5em;
+    padding-right: 25px;
+
+}
+.footer-text{
+    font-size: 3.5em;
+}
