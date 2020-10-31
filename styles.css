@@ -11,6 +11,9 @@ body{
     --primary-color: #fff;
     --secondary-color:#000;
     --third-color:#943133;
+    --first-bg-img: linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg-mob.jpg");
+    --second-bg-img:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/2.jpg");
+
 }
 a { 
     color: inherit; 
@@ -88,7 +91,7 @@ h1{
     width: 100vw;
     height: 100vh;
     background-color: var(--secondary-color);
-    background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg-mob.jpg");
+    background-image: var(--first-bg-img);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -97,7 +100,44 @@ h1{
     justify-content: center;
     align-items: center;
     margin-top:2rem;
+
+    animation-name:background-img;
+    animation-duration: 16s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+
+
 }
+.bg-img::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url("./imgs/13.jpg") url("./imgs/17.jpg")  url("./imgs/12.jpg") url("./imgs/6.jpg");   
+ }
+
+@keyframes background-img{
+
+    20%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/13.jpg");
+    }
+    40%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/17.jpg");
+
+    }
+    60%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/12.jpg");
+
+    }
+    80%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/6.jpg");
+
+    }
+
+
+}
+
+
+
+
+
 
 .descripcion{
     color:var(--primary-color);
@@ -243,3 +283,6 @@ footer{
 .footer-text{
     font-size: 3.5em;
 }
+
+
+
