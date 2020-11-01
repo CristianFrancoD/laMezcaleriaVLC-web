@@ -180,7 +180,7 @@ h1{
 
 .flecha{
     color: var(--primary-color);
-    font-size: 4em;
+    font-size: 8rem;
     padding-top:8rem;
     animation-name: flecha;
     animation-duration: 1s;
