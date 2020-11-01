@@ -83,10 +83,6 @@ h1{
     display: none;
 }
 
-
-
-
-
 .bg-img{
     width: 100vw;
     height: 100vh;
@@ -101,40 +97,48 @@ h1{
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
+    transition: 5s;
     animation-name:background-img;
-    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 
 }
 .bg-img::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
-    content:url("./imgs/bg-mob.jpg") url("./imgs/bg2-mob.jpg")  url("./imgs/bg3-mob.jpg") url("./imgs/bg4-mob.jpg") url("./imgs/bg5-mob.jpg");   
+    content:url("./imgs/bg-mob.jpg") url("./imgs/bg1-mob.jpg") url("./imgs/bg2-mob.jpg")  url("./imgs/bg3-mob.jpg") url("./imgs/bg4-mob.jpg") url("./imgs/bg5-mob.jpg");   
  }
 
 @keyframes background-img{
 
-    20%{
-        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg-mob.jpg");   
+    0%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg1-mob.jpg");   
     }
 
 
-    40%{
+    20%{
         background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg2-mob.jpg");
     }
-    60%{
+    40%{
         background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg3-mob.jpg");
 
     }
-    80%{
+    60%{
         background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg4-mob.jpg");
 
     }
-    100%{
+    80%{
         background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg5-mob.jpg");
 
     }
 
+    100%{
+        background-image:linear-gradient( 115deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url("./imgs/bg-mob.jpg");
+
+    }
 
 
 }
@@ -158,7 +162,15 @@ h1{
     border:1px solid var(--primary-color);
     color:var(--primary-color);
     font-size: 2.5rem;
+    transition: background-color 2s;
 }
+
+.btn-reservar:hover{
+    
+    background-color: var(--primary-color);
+    
+}
+
 
 .btn-reservar:hover{
     background:var(--primary-color) ;
@@ -280,10 +292,16 @@ footer{
     
 }
 .redes{
-    color: var(--primary-color);
+    
     font-size: 2.5em;
     padding-right: 25px;
 
+
+}
+
+.redes img{
+    border-radius: 50%;
+    border:var(--primary-color) 10px solid;
 }
 .footer-text{
     font-size: 3.5em;
