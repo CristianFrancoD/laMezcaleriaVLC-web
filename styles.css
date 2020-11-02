@@ -197,54 +197,57 @@ h1{
     }
 }
 .menuses{
-    height: 45vh;
+    margin-bottom: 7rem;
+    margin-top: 7rem;
 }
-
-
 .header-menus{
     display: flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
 .iconos{
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 100px;
+   
+   
 }
 
 .iconos img{
     border-radius: 50%;
     border:var(--secondary-color) 10px solid;
-    max-width: 25rem;
+    max-width: 100%;
     height: auto;
+    
     
 }
 
 .comida-tragos{
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .comida-tragos p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .mezcal-desti{
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .mezcal-desti p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -257,23 +260,38 @@ h1{
 .destilados{
     text-align: justify;
     background-color: var(--primary-color);
-    padding:2em;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+   
+
+   
+}
+.destilados div{
+    margin-bottom: 10rem;
+}
+.info-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .destilados img{
-    width: 25%;
-    height: 25%;
-    position: relative;
-    left: 40%;
+    max-width: 100%;
+    height: auto;
+
+   
 }
 .destilados h3{
-    
-    font-size:2em;
+
+    font-size:5rem;
     color:var(--third-color);
     border-bottom: 3px solid var(--third-color);
 }
 .destilados p {
-    padding-top: 1.1em;
+    padding-top: 0.5rem;
     padding-bottom: 1.5em;
+    font-size: 3rem;
  
     
 }
@@ -291,11 +309,10 @@ footer{
     color:var(--primary-color);
     
 }
-.redes{
-    
-    font-size: 2.5em;
+.redes {
+    font-size: 3em;
     padding-right: 25px;
-
+    padding-left: 25px;
 
 }
 
