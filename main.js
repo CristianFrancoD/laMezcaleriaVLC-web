@@ -1,4 +1,18 @@
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+var menu = document.getElementById("hamb-menu").addEventListener("click", showHideMenu);
+var open = false;
+function showHideMenu(){
+  if(open){
+    open=false;
+    console.log(open);
+  }else{
+    open = true;
+    console.log(open);
+
+  }
+}
+
+
+/*var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
   e.preventDefault();
@@ -54,3 +68,5 @@ function enableScroll() {
                 men2.style.display = "block"
               }
             }
+
+            */

@@ -4,8 +4,13 @@
     font-family: 'Playfair Display', monospace;
     margin:0px;
 }
+html{
+    scroll-behavior: smooth;
+
+}
 body{
     background-color:var(--primary-color);
+
 }
 :root{
     --primary-color: #fff;
@@ -198,9 +203,10 @@ h1{
 
 }
 
+
 .menuses{
 width: 100vw;
-height: 91vh;
+height: 100vh;
 
 font-size: 2rem;
 display: flex;
