@@ -185,7 +185,7 @@ h1{
     
     animation-name: flecha;
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
