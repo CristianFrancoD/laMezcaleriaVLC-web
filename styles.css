@@ -38,24 +38,27 @@ h1{
     top:0;
 }
 .left-container{
-    top:1rem;
-    position:absolute;
-    left: 1rem;
+        
+    position: absolute;
+    left:1rem;
+    top:0.5rem;
+
 }
 
 
 .logo{
     max-width: 12vw;
     height: auto;
+    
 }
 
 .links-nav{
     position: absolute;
     right:1rem;
-    top:1rem;
+    top:0.7rem;
 }
 .links-nav i{
-    font-size: 3rem;
+    font-size: 2.5rem;
     
 }
 .links-nav i:hover{
@@ -85,7 +88,7 @@ h1{
 
 .bg-img{
     width: 100vw;
-    height:110vh;
+    height:100vh;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -143,14 +146,14 @@ h1{
 
 
 
-
-
-
 .descripcion{
     color:var(--primary-color);
     max-width:720px;
     font-size: 1.5rem;
     text-align: center;
+    margin:0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn-reservar{
@@ -179,8 +182,10 @@ h1{
 .flecha{
     color: var(--primary-color);
     font-size: 5rem;
-    padding-top:8rem;
+    
     animation-name: flecha;
+    position: absolute;
+    bottom: 2rem;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -188,11 +193,9 @@ h1{
 
 @keyframes flecha{
     50%{
-        bottom: 25px;
+        transform: scale(1.1);
     }
-    100%{
-        bottom: 15px;
-    }
+
 }
 
 .menuses{
