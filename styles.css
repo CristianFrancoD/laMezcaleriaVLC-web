@@ -34,7 +34,7 @@ h1{
     width: 100vw;
     z-index: 2;
     background-color:white;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     top:0;
 }
 .left-container{
@@ -181,7 +181,7 @@ h1{
 
 .flecha{
     color: var(--primary-color);
-    font-size: 5rem;
+    font-size: 4rem;
     
     animation-name: flecha;
     position: absolute;
@@ -199,33 +199,32 @@ h1{
 }
 
 .menuses{
-height: 100vh;
 width: 100vw;
+height: 91vh;
+
 font-size: 2rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 }
 
 .header-menus{
     
     justify-content: center;
     font-size: 5rem;
-    margin-bottom: 50px;
-    margin-top: 50px;
-height: 100vh;
-width: 100vw;
-font-size: 2rem;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+    width: 100vw;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .iconos{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 
 .iconos img{
@@ -236,7 +235,6 @@ align-items: center;
 }
 
 .comida-tragos{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +243,6 @@ align-items: center;
 
 
 .mezcal-desti{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
