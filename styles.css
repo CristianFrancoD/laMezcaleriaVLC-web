@@ -39,7 +39,7 @@ h1{
     width: 100vw;
     z-index: 2;
     background-color:white;
-    border-bottom: 1px solid black;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     top:0;
 }
 .left-container{
@@ -85,7 +85,7 @@ h1{
     100% {transform: rotate(180deg);}
 }
 
-.links-nav ul{
+.menu-desk{
     display: none;
 }
 
@@ -173,11 +173,6 @@ h1{
     transition: background-color 2s;
 }
 
-.btn-reservar:hover{
-    
-    background-color: var(--primary-color);
-    
-}
 
 
 .btn-reservar:hover{
@@ -208,7 +203,7 @@ h1{
 
 .menuses{
 width: 100vw;
-height: 100vh;
+height: 91vh;
 
 font-size: 2rem;
 display: flex;
@@ -219,8 +214,7 @@ justify-content: center;
 
 .header-menus{
     
-    justify-content: center;
-    font-size: 5rem;
+ 
 
     width: 100vw;
     font-size: 2rem;
@@ -233,6 +227,8 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+
 }
 
 .iconos img{
@@ -297,10 +293,36 @@ justify-content: center;
     
 }
 
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 91vh;
+}
+.formulario{
+    padding-top: 10vh;
+    max-width:720px;
+
+}
+
+.formulario input, textarea{
+    border: none; 
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding:10px
+}
+
+.formulario input:focus, textarea:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+  }
 
 
 footer{
-    height: 25vh;
+    height: 20vh;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -311,27 +333,42 @@ footer{
     
 }
 .redes {
-    font-size: 1.3em;
+    font-size: 5vh;
 
-    padding-right: 20px;
-    padding-left: 20px;
+    
     margin-bottom: 20px;
 }
 
 
 .footer-text{
-    font-size: 1rem;
+    font-size: 3vh;
 }
 
 
 
 @media only screen and (min-width: 768px) {
 
-   
-    .logo{
-        max-width: 3.5vw;
-        height: auto;
+    .menu-desk{
+        z-index: 2;
+        display:flex;
+        align-items: flex-start;
     }
+    .menu-desk li{
+        display: inline;
+        padding: 2px 20px;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    .menu-desk li:hover{
+        border-bottom: 2px solid black;
+    }
+
+
+    .menu-mob{
+        display: none;
+    }
+
     
     .links-nav{
         position: absolute;
