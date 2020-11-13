@@ -241,21 +241,19 @@ justify-content: center;
 }
 
 
-.mezcal-desti{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
 
 
 .destilados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: justify;
     background-color: var(--primary-color);
-    padding-top:2rem;
-    padding-bottom: 2rem;
+    margin-top: 12vh;
+    padding-bottom: 1vh;
     margin-right: 2rem;
     margin-left: 2rem;
    
