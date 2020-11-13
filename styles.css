@@ -35,7 +35,7 @@ h1{
     height: 9vh;
     width: 100vw;
     z-index: 2;
-    background-color:white;
+    background-color:var(--primary-color);
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     top:0;
 }
@@ -66,7 +66,7 @@ h1{
     
 }
 .links-nav i:hover{
-    animation-name: example;
+    animation-name: menu-icon;
     animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -74,7 +74,7 @@ h1{
 
 }
 
-@keyframes example {
+@keyframes  menu-icon {
     10%{transform:rotate(20deg)}
     25%{transform:rotate(45deg)}
     50%  {transform: rotate(90deg);}
@@ -201,7 +201,6 @@ h1{
 .menuses{
 width: 100vw;
 height: 91vh;
-
 font-size: 2rem;
 display: flex;
 flex-direction: column;
@@ -210,9 +209,6 @@ justify-content: center;
 }
 
 .header-menus{
-    
- 
-
     width: 100vw;
     font-size: 2rem;
     display: flex;
@@ -220,6 +216,8 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
+
+
 .iconos{
     display: flex;
     flex-direction: column;
@@ -291,30 +289,76 @@ justify-content: center;
 }
 
 .contacto{
+    width: 90vw;
+    margin:auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 91vh;
+}
+.contacto h3{
+    font-size: 3vh;
 }
 .formulario{
     padding-top: 10vh;
-    max-width:720px;
 
 }
 
-.formulario input, textarea{
+
+.formulario input{
     border: none; 
     border-bottom: 1px solid grey;
-    width: 100%;
-    padding:10px
+    width: 90%;
+    padding:10px;
+    margin-top:10px;
+    font-size: 2vh;
+
+
+}
+
+
+
+.formulario textarea{
+    border: none; 
+    border-bottom: 1px solid grey;
+
+    resize: none;
+    width: 90%;
+    padding:10px;
+    padding-bottom: 0px;
+    margin-top:10px;
+    font-size: 2vh;
 }
 
 .formulario input:focus, textarea:focus{
     outline: none;
 }
 
+
+.formulario button{
+   
+        margin-top:10px;
+        padding: 10px 20px;
+        background:var(--secondary-color) ;
+        border:1px solid var(--primary-color);
+        color:var(--primary-color);
+        font-size: 2.5vh;
+        transition: background-color 2s;
+    
+    
+    
+    
+   
+}
+
 ::placeholder {
-    color: black;
+        color: var(--secondary-color);
+        font-size: 2vh;
+
+}
+
+  .telefono{
+    padding-top: 3vh;
+
+    max-width:90%;
   }
 
 
@@ -359,7 +403,7 @@ footer{
     }
 
     .menu-desk li:hover{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid var(--secondary-color);
     }
 
 
