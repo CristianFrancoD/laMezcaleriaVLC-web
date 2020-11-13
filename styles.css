@@ -275,7 +275,6 @@ justify-content: center;
    
 }
 .destilados h3{
-
     font-size:3rem;
     color:var(--third-color);
     border-bottom: 3px solid var(--third-color);
@@ -285,7 +284,6 @@ justify-content: center;
     padding-bottom: 1rem;
     font-size: 1.5rem;
     word-spacing: 3px;
-    
 }
 
 .contacto{
@@ -297,29 +295,29 @@ justify-content: center;
 .contacto h3{
     font-size: 3vh;
 }
-.formulario{
-    padding-top: 10vh;
 
+.telefono{
+    margin-bottom: 5vh;
+
+  }
+
+.formularioytel{
+    margin-top: 12vh;
 }
 
-
-.formulario input{
+.formularioytel input{
     border: none; 
     border-bottom: 1px solid grey;
     width: 90%;
     padding:10px;
     margin-top:10px;
     font-size: 2vh;
-
-
 }
 
 
-
-.formulario textarea{
+.formularioytel textarea{
     border: none; 
     border-bottom: 1px solid grey;
-
     resize: none;
     width: 90%;
     padding:10px;
@@ -328,38 +326,29 @@ justify-content: center;
     font-size: 2vh;
 }
 
-.formulario input:focus, textarea:focus{
+.formularioytel input:focus, textarea:focus{
     outline: none;
 }
 
 
-.formulario button{
-   
-        margin-top:10px;
-        padding: 10px 20px;
-        background:var(--secondary-color) ;
-        border:1px solid var(--primary-color);
-        color:var(--primary-color);
-        font-size: 2.5vh;
-        transition: background-color 2s;
-    
-    
-    
-    
-   
+.formularioytel button{
+    margin-top:10px;
+    padding: 10px 20px;
+    background:var(--secondary-color) ;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    font-size: 2.5vh;
+    transition: background-color 2s;
 }
 
 ::placeholder {
         color: var(--secondary-color);
         font-size: 2vh;
-
 }
 
-  .telefono{
-    padding-top: 3vh;
-
-    max-width:90%;
-  }
+.lugar{
+    margin-top: 5vh;
+}
 
 
 footer{
@@ -371,7 +360,6 @@ footer{
     text-align: center;
     background-color: var(--secondary-color);
     color:var(--primary-color);
-    
 }
 .redes {
     font-size: 5vh;
@@ -439,6 +427,22 @@ footer{
         height: 25vw;
     }
 
+    .contacto{
+        width: 100vw;
+        height: 68vh;
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 12vh;
+    }
+
+    .formularioytel{
+        margin-top: 0;
+    }
+    .lugar{
+        margin-top:0;
+    }
 
 
 }
