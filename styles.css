@@ -241,6 +241,12 @@ justify-content: center;
 }
 
 
+.mezcal-desti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 
 
