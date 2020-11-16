@@ -29,8 +29,7 @@ h1{
 }
 
 /*Main page mobile */
-
-.navegacion{
+.nav-bar{
     position:fixed;
     height: 9vh;
     width: 100vw;
@@ -39,11 +38,19 @@ h1{
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     top:0;
 }
+
+.navegacion{
+    height: 9vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .left-container{
         
-    position: absolute;
-    left:1rem;
-    top:0.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1.5vh;
 
 }
 
@@ -55,11 +62,11 @@ h1{
 }
 
 .links-nav{
-    position: absolute;
-    right:1rem;
-    top:0.5rem;
 
-
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5vh;
 }
 .links-nav i{
     font-size: 7vh;
@@ -381,17 +388,15 @@ footer{
 
 @media only screen and (min-width: 768px) {
 
-    .menu-desk{
-        z-index: 2;
-        display:inline;
-        margin: auto;
+    .menu-desk {
+        display: block;
+
     }
     .menu-desk li{
         display: inline;
         padding-left:20px;
         padding-right:20px;
         font-size: 2.5vh;
-        text-align: center;
     }
 
     .menu-desk li:hover{
@@ -404,15 +409,7 @@ footer{
     }
 
     
-    .links-nav{
-        position: absolute;
-        right:3rem;
-        top:1.5rem;
-    }
-    .links-nav i{
-        font-size: 3.5rem;
-        
-    }
+
     .menuses{
         display: flex;
         flex-direction: column;
