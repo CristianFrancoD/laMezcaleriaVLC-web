@@ -1,12 +1,11 @@
-var menu = document.getElementById("hamb-menu").addEventListener("click", showHideMenu);
-var open = false;
+//var menu = document.getElementById("hamb-menu").addEventListener("click", showHideMenu);
+//var open = false;
 function showHideMenu(){
-  if(open){
-    open=false;
-    console.log(open);
-  }else{
-    open = true;
-    console.log(open);
+  let menu = document.getElementById("mob-links");
+  if(menu.style.display === "block"){
+    menu.style.display = "none";
+   }else{
+    menu.style.display = "block"
 
   }
 }
