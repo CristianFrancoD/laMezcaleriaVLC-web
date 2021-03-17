@@ -59,6 +59,10 @@ a {
     font-size: 3vh;
 }
 
+.close{
+    font-size: 7vh;
+    padding-top:1px;
+}
 /*Main page mobile */
 .nav-bar{
     position:fixed;
